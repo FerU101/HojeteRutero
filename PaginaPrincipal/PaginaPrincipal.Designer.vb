@@ -23,10 +23,8 @@ Partial Class frmPaginaPrincipal
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.dgvResultados = New System.Windows.Forms.DataGridView()
         Me.cmbPlataformas = New System.Windows.Forms.ComboBox()
         Me.tvEstructura = New System.Windows.Forms.TreeView()
-        CType(Me.dgvResultados, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button1
@@ -37,14 +35,6 @@ Partial Class frmPaginaPrincipal
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "Button1"
         Me.Button1.UseVisualStyleBackColor = True
-        '
-        'dgvResultados
-        '
-        Me.dgvResultados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvResultados.Location = New System.Drawing.Point(361, 158)
-        Me.dgvResultados.Name = "dgvResultados"
-        Me.dgvResultados.Size = New System.Drawing.Size(374, 192)
-        Me.dgvResultados.TabIndex = 1
         '
         'cmbPlataformas
         '
@@ -58,7 +48,7 @@ Partial Class frmPaginaPrincipal
         '
         Me.tvEstructura.Location = New System.Drawing.Point(35, 39)
         Me.tvEstructura.Name = "tvEstructura"
-        Me.tvEstructura.Size = New System.Drawing.Size(268, 535)
+        Me.tvEstructura.Size = New System.Drawing.Size(584, 535)
         Me.tvEstructura.TabIndex = 3
         '
         'frmPaginaPrincipal
@@ -68,17 +58,14 @@ Partial Class frmPaginaPrincipal
         Me.ClientSize = New System.Drawing.Size(814, 597)
         Me.Controls.Add(Me.tvEstructura)
         Me.Controls.Add(Me.cmbPlataformas)
-        Me.Controls.Add(Me.dgvResultados)
         Me.Controls.Add(Me.Button1)
         Me.Name = "frmPaginaPrincipal"
         Me.Text = "Hojete Rutero"
-        CType(Me.dgvResultados, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents Button1 As Button
-    Friend WithEvents dgvResultados As DataGridView
     Friend WithEvents cmbPlataformas As ComboBox
     Friend WithEvents tvEstructura As TreeView
 End Class
